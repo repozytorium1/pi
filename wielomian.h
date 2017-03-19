@@ -9,9 +9,14 @@ using namespace std;
 class Wielomian{
 	public:
 		int z1,z2,z3,z4;
-		void show();
 		Wielomian(int=0,int=0,int=0,int=0);
 		~Wielomian();
+		void show();
+		void change(int,int,int,int);
+		Wielomian operator+(Wielomian);
+		Wielomian & operator+=(Wielomian);
+		Wielomian operator-(Wielomian);
+		Wielomian & operator-=(Wielomian);
 };
 #include "wielomian.cpp"
 
