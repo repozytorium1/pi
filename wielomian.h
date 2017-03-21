@@ -2,21 +2,30 @@
 #define wielomian_h
 
 #include <iostream>
+#include "jednomian.h"
 
 
 using namespace std;
 
 class Wielomian{
-	public:
+	private:
+		Jednomian a1,a2,a3,a4;
 		int z1,z2,z3,z4;
-		Wielomian(int=0,int=0,int=0,int=0);
+	public:
+		Wielomian();
+		Wielomian(int,int,int,int);
 		~Wielomian();
 		void show();
+		std::ostream & operator<<(Wielomian);
 		void change(int,int,int,int);
 		Wielomian operator+(Wielomian);
 		Wielomian & operator+=(Wielomian);
 		Wielomian operator-(Wielomian);
 		Wielomian & operator-=(Wielomian);
+		Wielomian operator*(int);
+		Wielomian & operator*=(int);
+		int operator==(Wielomian);
+		int operator!=(Wielomian);
 };
 #include "wielomian.cpp"
 

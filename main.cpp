@@ -15,37 +15,59 @@ int main(){
 	e.change(0,0,3,1);
 
 
-	cout<<"Dodawanie____________________________________________"<<endl;
+	cout<<endl<<"Dodawanie____________________________________________"<<endl;
+	cout<<endl<<"Obliczanie sumy "<<a<<"i "<<b<<endl;
 	a=a+b;
-	cout<<"Wynik sumy:";
-	a.show();
+	cout<<"Wynik tej sumy to: "<<a<<endl;
+	cout<<endl<<"Obliczanie sumy "<<e<<"i "<<e<<"i "<<e<<"i "<<e<<"i "<<e<<endl;
 	e=e+e+e+e+e;
-	cout<<"Wynik sumy:";
-	e.show();
-	c+=d;
-	cout<<"Wynik sumy:";
-	c.show();
+	cout<<"Wynik tej sumy to: "<<e<<endl;
+	cout<<endl<<"Obliczanie sumy "<<a<<"i "<<e<<endl;
+	a+=e;
+	cout<<"Wynik tej sumy to: "<<a<<endl;
 
-
-	cout<<"Odejmowanie____________________________________________"<<endl;
-	a.show();
-	b.show();
-	a=b-a;
-	cout<<"Wynik roznicy:";
-	a.show();
-	a.show();
-	b.show();
+	cout<<endl<<"Odejmowanie____________________________________________"<<endl;
+	cout<<endl<<"Obliczanie roznicy "<<a<<"i "<<b<<endl;
+	a=a-b;
+	cout<<"Wynik tej roznicy to: "<<a<<endl;
+	cout<<endl<<"Obliczanie roznicy "<<a<<"i "<<b<<"i "<<b<<endl;
 	a=a-b-b;
-	cout<<"Wynik roznicy:";
-	a.show();
-	e.show();
-	d.show();
-	e-=d;
-	cout<<"Wynik roznicy:";
-	e.show();
+	cout<<"Wynik tej roznicy to: "<<a<<endl;
+	cout<<endl<<"Obliczanie roznicy "<<a<<"i "<<b<<endl;
+	a-=b;
+	cout<<"Wynik tej roznicy to: "<<a<<endl;
+
+	cout<<endl<<"Porownywanie____________________________________________"<<endl;
+	cout<<endl<<"Porowuje "<<a<<"i "<<b<<endl;
+	if(a==b)
+	cout<<"Takie same"<<endl;
+	else
+	cout<<"Inne"<<endl;
+	cout<<endl<<"Porowuje "<<d<<"i "<<d<<endl;
+	if(d==d)
+	cout<<"Takie same"<<endl;
+	else
+	cout<<"Inne"<<endl;
+	cout<<endl<<"Porowuje "<<c<<"i "<<e<<endl;
+	if(c!=e)
+	cout<<"Inne"<<endl;
+	else
+	cout<<"Takie same"<<endl;
+
+	int x,y,z;
+	x=10;y=3;z=0;
+	cout<<endl<<"Mnozenie____________________________________________"<<endl;
+	cout<<endl<<"Mnoze "<<a<<"przez "<<x<<endl;
+	a=a*x;
+	cout<<"Wynik mnozenia to: "<<a<<endl;
+	cout<<endl<<"Mnoze "<<b<<"przez "<<z<<endl;
+	b=b*z;
+	cout<<"Wynik mnozenia to: "<<b<<endl;
+	cout<<endl<<"Mnoze "<<c<<"przez "<<y<<endl;
+	c*=y;
+	cout<<"Wynik mnozenia to: "<<c<<endl;
 
 
-
-
+	cout<<endl;
 	return 0;
 }
