@@ -10,7 +10,6 @@ using namespace std;
 class Wielomian{
 	private:
 		Jednomian a1,a2,a3,a4;
-		int z1,z2,z3,z4;
 	public:
 		Wielomian();
 		Wielomian(int,int,int,int);
